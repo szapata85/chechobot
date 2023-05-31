@@ -49,6 +49,11 @@ const flowDiscord = addKeyword(['discord']).addAnswer(
 )
 
 const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
+                     .addAnswer('Este mensaje envia tres botones', {
+            buttons: [{ body: 'Boton 1' }, { body: 'Boton 2' }, { body: 'Boton 3' }]
+    },null)
+
+/* const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
     .addAnswer('🙌 Hola bienvenido a este *Chatbot*')
     .addAnswer(
         [
@@ -60,7 +65,7 @@ const flowPrincipal = addKeyword(['hola', 'ole', 'alo'])
         null,
         null,
         [flowDocs, flowGracias, flowTuto, flowDiscord]
-    )
+    ) */
 
 const main = async () => {
     const adapterDB = new MockAdapter()
