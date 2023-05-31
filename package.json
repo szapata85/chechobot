@@ -1,9 +1,10 @@
 {
-    "name": "base-wppconnect-memory",
+    "name": "base-bailey-memory",
     "version": "1.0.0",
     "description": "",
     "main": "app.js",
     "scripts": {
+        "pre-copy": "cd .. && npm run  copy.lib base-baileys-memory",
         "start": "node app.js"
     },
     "keywords": [],
@@ -11,10 +12,11 @@
         "@bot-whatsapp/bot": "latest",
         "@bot-whatsapp/cli": "latest",
         "@bot-whatsapp/database": "latest",
-        "@bot-whatsapp/portal": "latest",
         "@bot-whatsapp/provider": "latest",
-        "@wppconnect-team/wppconnect": "1.22.0",
-        "mime-types": "2.1.35"
+        "@bot-whatsapp/portal": "latest",
+        "@adiwajshing/baileys": "4.4.0",
+        "mime-types": "2.1.35",
+        "wa-sticker-formatter": "4.3.2"
     },
     "author": "",
     "license": "ISC"
